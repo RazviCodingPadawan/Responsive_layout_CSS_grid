@@ -1,0 +1,69 @@
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+
+#container{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2%;
+    row-gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "boxes boxes boxes boxes"
+    "content content content sidebar"
+    "footer footer footer footer";
+}
+
+.boxes{
+    grid-area: boxes;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2%;
+    row-gap: 20px;
+    grid-template-areas: 
+    "box1 box2 box2 box2 box2 box3";
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: content;
+}
+aside{
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+}
+.box-1{
+    grid-area: box1;
+}
+.box-2{
+    grid-area: box2;
+}
+.box-3{
+    grid-area: box3;
+}
+
+header,
+main,
+aside,
+footer,
+[class*="box-"],
+[class*="section-"]{
+    border: 1px solid #333;
+    min-height: 100px;
+}
+
+footer{
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2%;
+    row-gap: 20px;
+    display: grid;
+}
