@@ -93,14 +93,7 @@ footer{
         grid-template-areas: 
         "box1 box2 box2 box3";
     }
-    footer{
-        padding: 5px;
-        grid-template-areas: 
-        "";
-        column-gap: 2%;
-        row-gap: 20px;
-        display: grid;
-    }
+
 }
 
 /* Tablets såsom Ipad */
@@ -128,6 +121,13 @@ footer{
         grid-template-areas: 
         "box1 box2 box3";
     }
+    footer{
+        padding: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 20px;
+        display: grid;
+    }
 }
 
 /* Mobiltelefoner */
@@ -136,7 +136,7 @@ footer{
         width: 90%;
         margin: 20px auto;
         display: grid;
-/*         grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 1fr;
         column-gap: 2%;
         row-gap: 20px;
         grid-template-areas: 
@@ -150,12 +150,19 @@ footer{
         grid-area: boxes;
         width: 100%;
         display: grid;
-        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
         column-gap: 2%;
         row-gap: 20px;
         grid-template-areas: 
         "box1"
         "box2"
         "box3";
+    }
+    footer{
+        padding: 5px;
+        grid-template-columns: 1fr;
+        column-gap: 2%;
+        row-gap: 20px;
+        display: grid;
     }
 }
