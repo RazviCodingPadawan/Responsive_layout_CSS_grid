@@ -36,7 +36,7 @@ This project demonstrates a simple responsive layout using only HTML and CSS. It
 
 ## Project Structure
 
-your-repo-name/
+Responsive_layout_CSS_grid/
 ├── css/
 │   └── style.css   # CSS file for styling
 ├── index.html      # HTML file for the layout
